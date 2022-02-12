@@ -1,0 +1,21 @@
+version: "2.1"
+services:
+  swag:
+    image: lscr.io/linuxserver/swag
+    container_name: swag
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Stockholm
+      - URL=torcat.se
+      - VALIDATION=html
+      - SUBDOMAINS=www,
+      - ONLY_SUBDOMAINS=false
+    volumes:
+      - /mnt/zNVME/Docker/Torcat:/config
+    ports:
+      - 443:443
+      - 80:80
+    restart: unless-stopped
