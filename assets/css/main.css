@@ -2190,7 +2190,7 @@ input, select, textarea {
 			content: '';
 			display: inline-block;
 			height: 0.2em;
-			width: 75%;
+			width: 100%;
 		}
 
 	footer.major {
