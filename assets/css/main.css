@@ -2193,6 +2193,14 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		header.sides:after {
+			background: #e03023;
+			content: '';
+			display: inline-block;
+			height: 0.2em;
+			width: 100%;
+		}
+
 	footer.major {
 		margin: 4em 0 0 0;
 	}
